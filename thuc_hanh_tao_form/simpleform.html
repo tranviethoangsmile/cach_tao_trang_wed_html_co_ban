@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Thực hành tạo form đơn giản</title>
+    <style>
+       .wufoo {
+font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+}
+    </style>
+</head>
+<body>
+    <form method="GET" action="simpleform.html">
+        <h2>Order Menu</h2>
+        <p>Bạn muốn mua gì?</p>
+        <select>
+            <option value="">A</option>
+            <option>B (+$0.5)</option>
+            <option>C (+$0.5)</option>
+        </select>
+        <p>Bạn muốn mua bao nhiêu?</p>
+        <input type = "radio"name="rd"/>1- $10 <br>
+        <input type = "radio"name="rd"/>2 - $20<br>
+        <input type="radio"name="rd"/>3 - $30<br> 
+<p>Name <span style="color:red">*</span></p>
+    <input type="text"name="fistname" placeholder="Fistname" size="15"/>
+    <input type="text"name="lastname"placeholder="lastname"size="15"/>
+    <p>Email</p>
+    <input type="text"name="Email"size="35/>
+    <p> Phone Number </p>
+    <input type = "text" name="phone1" size="5"/> 
+    <input type = "text" name="phone2" size="5"/> 
+    <input type = "text" name="phone3" size="5"/>
+    <p><input type = "button" name="btSubmit" value="Submit"/></p>
+    
+    </form>
+</body>
+</html>
