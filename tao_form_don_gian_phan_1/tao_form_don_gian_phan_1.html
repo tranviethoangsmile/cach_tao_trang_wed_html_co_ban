@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tạo form đơn giản phần 1</title>
     <style>
-       form{
-           
-       }
     
         h3 {
             background: pink;
@@ -17,10 +14,12 @@
 </head>
 <body>
     <form>
+        <fieldset> 
+            <legend>Form Mẫu</legend>
         <p><h3>SỞ THÍCH CỦA BẠN</h3></p>
-        <H5>Họ và tên </H5> 
-        <input type="text" name="yourname">
-        <h5>Email</h5>
+        Họ và tên  
+        <input type="text" name="yourname"> <br><br>
+            Email
         <input type="text"name="mail">
         <h5>Sở thích</h5>
         <input type="checkbox" name="hobby">Thể Thao 
@@ -32,7 +31,7 @@
         <input type="checkbox" name="hobby">Du lịch <br> <br>
         <input type="submit" value="Gửi Thông Tin">
         <input type="reset" value="Nhập lại">
-
+    </fieldset>
     
     </form>
 </body>
