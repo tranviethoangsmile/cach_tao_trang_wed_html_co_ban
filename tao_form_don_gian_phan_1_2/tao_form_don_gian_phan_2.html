@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form đăng kí đơn giản phần 2</title>
+    <style>
+        legend{
+            color:red;
+            font-size: larger;
+        }
+        h3
+        {
+            color: rebeccapurple;
+            background: yellowgreen;
+
+        }
+        form {
+            background: rosybrown;
+        }
+        #submit {
+            background: violet;
+        }
+#reset {
+    background: yellow;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Form Đăng kí </legend>
+            <p><h3>Đăng kí học viên</h3> </p>
+            Họ và Tên: 
+            <input type="text" name="fullname" value="full name"> <br><br>
+            Ngày Sinh :
+            <input type="date" name="date" value="ngày sinh"><br><br>
+            Giới tính: 
+            <input type="radio" name="Nam">Nam 
+            <input type="radio" name="Nữ">Nữ <br><br>
+            Địa chỉ: 
+            <input type="text" name="address" value="Địa chỉ"><br><br>
+            Lớp:
+            <select>
+                <option>Chọn lớp </option>
+                <option>A</option>
+                <option>B</option>
+                 </select><br><br>
+             Email: 
+             <input type="text" name="email" value="Email"><br><br>
+             Số Điện Thoại:
+             <input type="number" name="phone" value="phone"><br><br>
+             <input id="submit" type="submit" name="đăng kí" value="Đăng ký">
+             <input id="reset" type="reset" name="reset" value="Nhập lại">
+
+
+
+            
+
+
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
