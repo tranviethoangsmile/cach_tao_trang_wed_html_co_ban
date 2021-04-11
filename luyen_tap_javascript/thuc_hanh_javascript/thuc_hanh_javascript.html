@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành Javascript</title>
+    <style>
+        #formid {
+            width: 10cm;
+            background: yellow;
+        }
+        h2 {
+            color: saddlebrown;
+            font: 1em sans-serif;
+        }
+        p{
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        input {
+            background: tan;
+        }
+        button{
+            background: violet;
+        }
+    </style>
+</head>
+<body>
+   <form id="formid">
+       <fieldset> 
+           <legend>Member</legend>
+       <h2>Form Đăng kí thành viên</h2><br><br>
+       <p>Họ và Tên:</p> 
+       <input type="text" name="fullname" id="fulname"> <br><br>
+       <p>Ngày Sinh:</p>
+       <input type="date" name="date" id="fuldate" ><br><br> 
+<p>Tên đăng nhập:</p>
+<input type="text" name="account" id="acc"> <br><br>
+<p>Mật khẩu:</p>
+<input type="password" name="pass" id="mk" > <br><br>
+<button type="button" name="Đăng kí" id="dk" onclick="showAccount()">Đăng kí</button>
+<button type="reset" name="resset" id="rs" onclick="showMessage()">Nhập lại</button>
+
+    </fieldset>
+   </form>
+</body>
+</html>
+<script>
+function showAccount(){
+    message = document.getElementById("fulname").value;
+    message = document.getElementById("fuldate").value;
+    message = document.getElementById("acc").value;
+    message = document.getElementById("mk").value;
+    if(message==''){
+    alert('Nhập đầy đủ thông tin');
+    Exit;
+    }
+
+alert('đăng kí thành công');
+
+}
+function showMessage(){
+    alert('nhập lại bạn nhé');
+    exit;
+}
+
+</script>
+
