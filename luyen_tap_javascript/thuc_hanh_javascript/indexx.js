@@ -1,17 +1,9 @@
-function showAccount(){
-    message = document.getElementById("fulname").value;
-    message = document.getElementById("fuldate").value;
-    message = document.getElementById("acc").value;
-    message = document.getElementById("mk").value;
-    if(message==''){
-    alert('Nhập đầy đủ thông tin');
-    Exit;
-    }
-
-alert('đăng kí thành công');
-
+function showMessage()
+{
+    
+    let hei = document.getElementById("numhei").value;
+    let wid = document.getElementById("numwid").value;
+    let DT = (hei * wid); 
+    document.write(DT)
 }
-function showMessage(){
-    alert('nhập lại bạn nhé');
-    exit;
-}
+
