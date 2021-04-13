@@ -11,6 +11,10 @@
         let N = prompt ('Nhập ngày');
         let T = prompt('Nhập tháng');
         let Na = prompt('nhập năm');
+        if(N==''||T==''||Na==''){
+            alert('Vui lòng nhập đầy đủ!');
+            exit;
+        }
         document.writeln('Hôm nay là:'+ N + -T + -Na);
     </script>
 </body>
