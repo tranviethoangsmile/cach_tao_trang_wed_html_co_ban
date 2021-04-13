@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính diện tích - Chu vi hình tròn</title>
+</head>
+<body>
+    <p>Nhập R:</p>
+    <input type="number"name="R" id="r"> <br><br>
+    <button type="submit" onclick="showDT()">Tính diện tích</button>
+    <button type="submit" onclick="showCV()">Tính chu vi</button>
+    
+    
+</body>
+</html>
+<script>
+    function showDT(){
+        var R = document.getElementById("r").value;
+        var DT = parseInt(R)*R*3.14;
+        if(R=='0'||R=='')
+        {
+            alert('Kiểm tra lại!')
+            exit;
+        }
+        document.write('diện tích là:'+ DT);
+    }
+    function showCV(){
+        var R = document.getElementById("r").value;
+        var CV = parseInt(R)*2*3.14;
+        if(R=='0'||R=='')
+        {
+            alert('Kiểm tra lại!')
+            exit;
+        }
+        document.write('Chu vi là:' + CV);
+    }
+</script>
