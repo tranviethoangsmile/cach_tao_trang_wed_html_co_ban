@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm trung bình Toán - Lý - Hoá</title>
+    <style>
+        form{
+            width: 10cm;
+            background: red;
+            text-align: center;
+
+        }
+        input {
+            background: chartreuse;
+        }
+        p {
+            color: darkblue;
+        }
+        button{
+            background: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Bản tính điểm trung bình</legend>
+    <p>Tên Học Viên</p>
+    <input type="text" name="yourname" id="namess">
+    <p>Điểm Toán</p> 
+    <input type="number" name="toan" id="toan"> <br>
+    <p>Điểm Lý</p> 
+    <input type="number" name="ly" id="ly"><br>
+    <p>Điểm Hoá</p>
+    <input type="number" name="hoa" id="hoa"><br> <br>
+    <button onclick="showDTB()">Tính điểm trung bình </button>
+    <button type="reset" onclick="showMessage()">Nhập lại</button>
+    </fieldset>
+</form>
+</body>
+</html>
+
+   <script>
+       
+       function showMessage(){
+           alert('vui lòng nhập lại')
+       }
+    function showDTB(){
+        var ten = document.getElementById("namess").value;
+        var Dtoan = document.getElementById("toan").value;
+        var Dly = document.getElementById("ly").value;
+        var Dhoa = document.getElementById("hoa").value;
+        DTB = (parseInt(Dtoan) + parseInt(Dly) + parseInt(Dhoa))/3;
+        if(ten==''||Dtoan ==''||Dly==''||Dhoa==''){
+            alert('bạn nhập đầy đủ chưa?')
+            exit;
+        }
+
+        document.write(ten + DTB)
+    }
+    
+</script>
