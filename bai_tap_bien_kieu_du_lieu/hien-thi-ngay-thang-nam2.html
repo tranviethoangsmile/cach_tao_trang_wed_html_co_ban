@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị ngày tháng năm </title>
+</head>
+<body>
+    Nhập ngày: 
+    <input id="ngay" type="number"/><br><br>
+    Nhập tháng:
+    <input id="thang" type="number"/><br><br>
+    Nhập năm:
+    <input id="nam" type="number"/> <br><br>
+    <button onclick="show()">Hiển thị</button> 
+    <p id="showall"></p>
+</body>
+</html>
+<script>
+    function show(){
+var N = document.getElementById("ngay").value;
+var T = document.getElementById("thang").value;
+var Na = document.getElementById("nam").value;
+message = N + -T + -Na;
+if(N==''||T==''||Na==''){
+    alert('Kiểm tra lại nhé');
+    exit;
+}
+document.getElementById("showall").innerText = 'hôm nay là: '+ message;
+    }
+</script>
