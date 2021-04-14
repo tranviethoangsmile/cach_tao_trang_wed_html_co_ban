@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính lãi suất ngân hàng</title>
+    <style>
+        form{
+            width: 10cm;
+            background: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        p{
+            font-weight: 100;
+            color: red;
+        }
+        button{
+            background: crimson;
+            font: optional;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>Bảng tính lãi</legend>
+    <p>Số tiền gửi (đồng):</p>
+    <input type="number" name="tiengui" id="tgv"><br>
+    <p>Thời hạn (năm):</p>
+    <input type="number" name="thoihan" id="th"><br><br>
+    <button type="submit" onclick="laisuat()">Tính lãi</button>
+</fieldset>
+</form>
+</body>
+</html>
+<script>
+    function laisuat(){
+        var T = document.getElementById("tgv").value;
+        var N = document.getElementById("th").value;
+         LS = (parseInt(T) * 6.9)/100;
+         if(N>1){
+             LS = parseInt(LS)*parseInt(N)
+         }
+         else if(T==''){
+             alert('Vui lòng nhập số tiền');
+             exit;
+         }
+        document.write('Tiền lãi:' + LS);
+    }
+</script>
