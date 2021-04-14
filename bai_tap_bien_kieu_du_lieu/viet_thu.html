@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư gửi người yêu</title>
+    <style>
+        form {
+            width: 10cm;
+            background: red;
+        font: optional;
+        text-align: center;
+        }
+        button{
+            background: green;
+        }
+        input{
+            background-attachment: fixed;
+            background: indianred;
+        }
+        p{
+            font-style: inherit;
+        }
+
+    </style>
+</head>
+<body> 
+    <form>
+        <fieldset>
+            <legend>Form thư mẫu</legend>
+    <P>Tên người yêu:</P>
+    <input type="text" name="namefr" id="myname"><br><br>
+    <p>Địa chỉ:</p>
+    <input type="text" name="address" id="add"><br><br>
+    <p>Ngày</p>
+    <input type="number" name="time" id="ngay"><br><br>
+    <p>tháng</p>
+    <input type="number" name="timee" id="thang"><br><br>
+    <p>Năm</p>
+    <input type="number" name="timeee" id="nam"><br><br>
+    <button onclick="showemail()">Xem thư</button>
+    </fieldset>
+    </form>
+    <p id="thu">
+        <br><br>Em không biết phải nói sao để anh hiểu rằng, em nhớ anh thật nhiều. <br>Em yêu anh đến khi trái tim này tan thành nghìn mảnh. <br>
+        Tất cả những gì em yêu thương, em khát khao và cần đến, chính là anh, mãi mãi về sau. <br>
+        Em chỉ muốn ở bên anh, và anh yêu hỡi, em sẽ trở thành người phụ nữ như anh mong muốn.<br><br>
+
+Có phải em thật tệ hại, khi cứ nghĩ đến anh thật nhiều, thật lâu và nhất là mỗi khi đêm xuống? <br>
+Em hứa sẽ sẽ cố gắng triệu triệu lần hơn thế. <br>
+Nhưng hơn tất cả, em chỉ mong một ngày nào đó, anh sẽ tự hào về em, như tự hào về vợ của anh,
+<br> và mẹ của các con anh (ít nhất là 2 nhé, em vừa mới quyết định đấy!). <br>
+Em nhớ thật nhiều cảm giác mỗi đêm anh ôm em và ru em ngủ trong vòng tay. <br>
+Đêm nay, em chỉ muốn được gần bên anh… và anh biết không, trái tim em đang đau đớn đến nhường nào.<br>
+
+Anh yêu thương, đừng bao giờ rời xa em nữa nhé. Yêu anh rất nhiều.<br> <br><br>
+    </p>
+</body>
+<script>
+    function showemail(){
+        var thu = document.getElementById("thu").innerHTML;
+        var ten = document.getElementById("myname").value;
+        var addRess = document.getElementById("add").value;
+        var ngay = document.getElementById("ngay").value;
+        var thang = document.getElementById("thang").value;
+        var nam = document.getElementById("nam").value;
+        if(ten==''||addRess==''||ngay==''||thang==''||nam==''){
+            alert('Kiểm tra lại');
+            exit;
+        }
+        document.write(ten + 'thương nhớ!!' + thu + addRess + ' , '+ ngay + -thang + - nam)
+    }
+</script>
